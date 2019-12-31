@@ -5,6 +5,30 @@
         function callJS(){
         alert("Android 调用了js");
         }
+
+        function callToast(){
+        toast.toast("js调用了Android中的toast方法");
+        }
+
+        function shouldOverrideUrl(){
+        document.location = "demo://webview?arg1=1&arg2=2"
+        }
+
+        function callbackValue(result){
+        alert("callbackValue: " + result);
+        }
+
+        function chromeClient(){
+         var result = prompt("demo://webview?arg1=1&arg2=2", "");
+         alert(result);
+        }
+
     </script>
 </head>
+
+<body>
+<button type="button" id="button1" onclick="callJS()">通过addJavaScript调用</button>
+<button type="button" id="button2" onclick="shouldOverrideUrl()">shouldOverrideUrlLoading</button>
+<button type="button" id="button3" onclick="chromeClient()">chromeClient</button>
+</body>
 </html>

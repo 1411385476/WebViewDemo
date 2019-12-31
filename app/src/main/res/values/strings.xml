@@ -3,5 +3,7 @@
     <string name="base_webview">WebView 基础用法</string>
     <string name="webview_js">js交互</string>
     <string name="load_url">loadurl调用js</string>
+    <string name="evaluate_url">通过evaluate调用js</string>
+    <string name="webview_flow">WebView漏洞修复</string>
     <string name="title_activity_base_web_view">BaseWebViewActivity</string>
 </resources>

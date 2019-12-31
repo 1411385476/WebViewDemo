@@ -25,5 +25,13 @@ public class BaseWebViewActivity extends AppCompatActivity {
         mBaseWebView.loadUrl("https://www.baidu.com/");
     }
 
-
+    @Override
+    public void onBackPressed() {
+        //判断WebView是否可以后退
+        if(mBaseWebView != null && mBaseWebView.canGoBack()){
+            mBaseWebView.goBack();
+            return;
+        }
+        super.onBackPressed();
+    }
 }

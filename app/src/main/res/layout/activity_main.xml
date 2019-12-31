@@ -18,4 +18,10 @@
       android:layout_height="wrap_content"
       android:text="@string/webview_js"/>
 
+  <Button
+      android:id="@+id/webview_flaw_bt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/webview_flow"/>
+
 </LinearLayout>
